@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seahorses</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        h1 {
+            color: #008b8b;
+            margin-top: 20px;
+        }
+
+        .container {
+            padding: 20px;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+            color: #333;
+            margin: 20px auto;
+            max-width: 600px;
+        }
+
+        .image-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .image-card {
+            border: 3px solid #008b8b;
+            border-radius: 10px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .image-card img {
+            width: 250px;
+            height: 170px;
+            object-fit: cover;
+        }
+
+        .image-card:hover {
+            transform: scale(1.05);
+        }
+
+        .wikipedia-link {
+            margin-top: 20px;
+            font-size: 18px;
+        }
+
+        .wikipedia-link a {
+            color: #008b8b;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .wikipedia-link a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Seahorses</h1>
+
+    <div class="container">
+        <p>Seahorses are small marine fish that belong to the genus Hippocampus. Known for their upright posture and horse-like head, seahorses are fascinating creatures. They are commonly found in shallow waters around the world, where they swim in pairs and rely on camouflage for protection from predators.</p>
+        
+        <div class="image-container">
+            <div class="image-card">
+                <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQiTM7I91kwGZ-aS1U5XVcd_ONw6FdAr4JpxUehHMhrR8YcaE1V5lUsjXaIwYi48HV2dbARN5B5IE5ib4d40LvpZT20N02nVKIC1VKMJtKD" alt="Seahorse">
+            </div>
+            <div class="image-card">
+                <img src="data:image/webp;base64,UklGRtwdAABXRUJQVlA4INAdAABQkwCdASo4ATgBPpVInkslpCKqJfUJsUASiUDiJB1my9uJMU0PPD/578wvchu/+c/G3WI2N55fPv6B6oP6n9gf9YOnn5jP3G/bv3Y/Tx6Dv876oT0UfLu9or90/SHwirzvsRsn7a3bTNtB1ssj6yY0TxPfd/et9wRTQQyH4A+sDojdA6WRmgIdIm+aFEWliX9mS1/wN4UcXftVPLKIh/9e4oa6anXTB+oXFnanEfsHPzTqIUaP4fLVwNAH5efwZVwbD+AqgKdQPfxxsHrjYQcJgcoJEm6N56tiojiumAYLI2hyML21Qs6QaGeEjrf+L1o2JLfkYJgZcjAImVat3HECGfGHze55xukgABlHNditm9JC8Tgud1oESLvyJzhI94djdzmLlkgfYx9QOeazuHwTMGWGgPuoWWDIcGvdIGVjJRzkVv3gP9+02Vz2sNN2zxB+u4zEXS7mRodBURG3zN2UbP8hLKCFExFEsgj4FwiTlXT8/jDn0Np+Zj+w+fFVZREzxb/VRK2HwtZeTJtAXclIAnoyXt0dP4DLJmh4FS5xqPo2Jh96g7Hyw6+ZZjctE6p1CykPEWyzHMM642Fr99kSSs3QOYwse7orGDDsY9dxDFWfy+N2q3OCEPpQMWhg1wGAM2SmTA9GmjVJ/fKQIxZOzvIqi1H+xpd7XgKb5oUo1NaCPT9VrjxOP5uZ47WH3e+mHqL0B9GgQjrIReMqA6njF+up1ASAmmkapEURjD8zAscdBQ7ZF0xZ5fEM2YiqpYy5OYaWgfGVs2+7oLO/JMXW69zaFwmCZei3rTTJSOvPqtqoJSeEPmR375JSOR6CcGwr8rcv4H9gq5c6tUm0XH5FR4DzzBOkGSZmpQSVqKY+HpIXLepuvJ7J8xhbKRebo/lu0nbXYbqZHRBkWxng9oE3ggH/SJ7ZZdWD9LjPP/Ip7PfbYi++lJPRnChGOwEkWFcJvnuN4/SeP/HbTvIc1YCNunxYSBb3HRbbd400RMBezsNU86TaE7v/a90NALf/GfmaJjoNfFBwDJmK61VMIEXR8f62wMqmJWRSvuukyk1jYFoeMC73WeKggKY7OoA99meF/kh0aCCyXNG0FCvXdzs7/t/neP0pM9BZS4OKdf/ZBtSuH+Jv/kOtldYLAKkE/0sMQu3y0Lt3oHcfhVfV45dbmrC19dcU4o/uXT7s6bN6AO7y+rtqEEr8xEAD0ERhFDUgCJdAwWLHLOkQSuLUwE+jzy+fDoT8G4kK3ZAyLgVr8EpfENYysMAEKbr59Jd+9xjV+fvtkdp7TdaA2iEFUEZ1KLhlUtzUHK7qHXZJBi/uAP4aZvE4HcCe+h/cp7cfNiiAfmSYcNO3V/pDo7DKdj0KNBFEqYw8LODslJnMFjpxWOgxzAgRwWi8kszuHVdI9B/lFrLHnIKSthIBz9jCfXfVZ7Bm7H8pfiw6Ce12DWvzSw6P7VnbbX0cxdWWaFCA60PH1H9ztPhmPC7d+1vCCUQSyrAbMRKdxIc6CTkW7ItRn+XMPGHLi1QvIhQmvXwtdNPWBGG1lDQ27FNnCOD0O5OlV44Ql00E5E01xlJnznqvbOPgAAD+7rMlbf6Ugwdjo///Om/D3dyfS6zkh3H2X0vCrzkCE53QEHj7gRF8pCgs05gTLac9ko2j8XakGAn/Gg/Z3n1JHzilgJKGTLhJuwSAQnuCY9OmiKi9q2lObqNrI7e9xG8+U4A8HVVtLkcy9cG43Y8y0FBfFHb7rrFF+7U0N5xbn8SoGJ4WW2SRB35fBcDt/Dhp08OEkavnfytaLiPd/xHbBF0cYJChnxdig6KwqVu7eFLm+svs/m263ExA6cRbqZTOfydYcFBu1gRmWND+MLdhRnMd1pwcj3aBq3jhq3wKssPArBQQtBsj7JBzqGiGcHso7OwpWiYE/1DPETjsOYUbJFGr0qEJxIA2/QTw6kraGHZQoYFGv0Z1iCjc/hC14+kd94vyYs4hI8s1tMrjTaLYzoLwPJy1v7th2ndYASduwJkR0wx+w38zgBzjmVhzk/H7LQmZZ+G6RWF/ewVfoTgxhHLk7ttqUpxd3PiZ0Gs8Bu9ZC7FSFXybHJy23PJquKioyPD0tBG/aNFiVQfuoKehk4XGMhdm3TuhEIA0K65Eht7lAzWF+noyOe3f6xdRP5/5NDcDv9d4TWFvk5raobd0CVfxX4OeRvDIq+kmmy5AERLcSR0Uaq8Kx9eFZ3J6M57pp3HW9HnRc6vHVxxQL1SDA/vq+9qP2NqCwwPe4ug3N23qfuEN2e57Kod2Fd0gophnCzpgXjSzDz8dhJcZ9ro0GIoMPzrp7EPhEqvfkzgVIr85Xp2EWtiFMqT/d4xhbGO84GEgtog+tcZUX9gK9Sfv+pXm1wVvSHbppUCCQRNniTsI8KgH75PjUaqLLtOSblz002A+l+JmncXN1g9NGSGRBbX2qrVzICBJ09GJ+xXRw9nDfgfDiT85dj+fJ9e9r5o1e25ZnviXNn2jpdWyxoJH9WfU2IciCqREUEaNlWU1gxB5qjH/5teHMfoAbyXKu9oJ/uHAY8yYR6Xxhpd/R1idHBdsh9CJmAjjqwejKmadnFGqWnHQijx4rdKsXPxBIwWt8mqno+1cG1g5rzm6DFk/lAaQKmLYXJ6iN/LV5tiayAjfZU8Z3VvrrO9r3bCakNX+1sNsPyt6xXiNCPcZbuEAdaBx3GU+e0a9Wi9i0SbiajKiPjTdbuNtGxv4KilSdspKm+LgHYYJioRnGUEo5HWYz1RzVq/UpSXrUEyTqlzjPyXIwqd8o03ANiX7bzOCL8owSxASRmztLn4dDR6ag9lnQoGYlhd5D1GfoSnpKB+KDnGUUaDVQYPV78kaNLNFDDVtYCZp5uDQZSVmilUMj8tlLpajpvbscLyi/nUg0eBRQ6O1Uy3v0NPvDgzJv5n8dWnWI6hXggoAAHyjdnU6KzRrzqRQr58DFQLM6ekvgm4O1QF3p+qnD9uI8WTuJxznpnQpI9eYXCOrbCa8d8c/o4NRaeQ6yIKZF9T5l+PgrI8gOYNxKzLHVGvl/mBmTstzfUaoG7E54h9Aii7+Fj2PjJkWA1hZbPWY1zkQSan5h6K61L539HiXL6iauXGJZfSz2ANSgXnHraS9wNjuRypRD1+gxLjqHMBI199Jehqqb1ceA5RXHULgMoVOO/0PyjhHRoI5euuFu+d9c3VWV4jv9HaC5r9kkBVUL5NCfVhaDN5u6XSu65LhRU/Cqzym2fULvs9nggiuNRA2fLNz9TGKOtqdBB8ANYo5fHwFgTt8/IeTaXglLpEQ1QBMAu0Bnp3tdZuFK191uafcAb9QRhaYx65cqzAV3uz/ufMg3jX5SOEL9rlTWHCkLBZMOT3eEyNHrvuS+NtFP5JkKDWmRKIWdlqcb4fW8qytDXEEb2k+/32mQjuFIAT04e/O0nAgLhtBTTUfx2Te2QS1MG1WrOBz5SDkW/631CwUPrK2umkPqOWPkNiuvyvdLBsyzNH1XP71JZ7bEERmrkRPOCjd/Kg1d7coQBE0xIG7DVxlyxnFABimmkXCGekdAgl5DviIs1PfYlpa6czyp2tx5QjgAHc9LAlmNx1rWL2pfSQlFhatSD+1nCVYwd+UD9j5VicgRnK7DvlA9yyL/gwf1X6OxbsRp5hX81/yB29bt1rDMbrXJU+LMwtAYT6Jto01pc1+SnIh5OXB4GyzTnjwd+eW6TAqlwtIEjQ6Z/T4nA7adMZJNjPMLOX9AaZW9rwKkFpMp1VoRZd2n/lY/6UZeJEDdPTZxVbP/NDBWulOZRR+4esDIR4pWaKgBuqA48uck1KyHAObcv8VmeFFopbTYxH1cco0l8A1ZYTTkEX2ya0qlOk0UahrxRGk5c71ysNy/HZaaiBHWlDqKxwW2Thpz75hzV0t/f7Sgs7mkwpK+ntr3oT9ZSOARxQ9UkFEhidAFqTZ2/IYSTugZ9wbgTdxkDy2o2j3JrAlWugxG5fbtBjlfTtH+n6rmqJXooklPjLHg+ClveuBqJ8+ZOPPHS4jq/JQwAV0gL0BDCP7ikUaBmpfAT4B78jzxp1mA1Mq5XpaBCh9qPjboLowuNu1Yd0aZS/cRmGgeottcxb5HIaTyVTp6EEKK+p96VhLCLMOLfI0LOlq14JpLXVTwptWr6ZY4aotL1CPEB6hRpJS6HjiPK/kH+1MH3AxQWM7IyIvnrNL3IkhJrv9trodE859OmU2vys2X2+EF+12o3Bt5Xtx/zp1l8vVYla5DXhW9FRkEAFX1z0+ddzCmu5QBp9fIFhypFzTjqiYxwzvAiEi0R1jyaa/+vETFgefeY62mjA1EBP8b/Y2AZt+166w7DJ7jNAabkh5zz3N4aM/JKLaAIWtFGm/1zQJ7R829jgacvaB1WtHv4y4oNsdiMKXGkl2WvqOroEfOp5KX5E6ES4EO2zu3davsA+KFUpDhij8oP6n3JoDMqR49tmJeBS1uk2UJpTscb/VMMzt2JY6Oby+Trsk+SupfqN6Fxk5CN0BwHWsopqrjWwHeDRj4S3cemZgwGxSz5CN1A2IlPL0n67/HMbW6Jv7lY0EC5XQA1ACrYlXpgIJmMPBypbqrWtxS5bd/9eGPVT3uQ1c9PqZJL31qa5ohAqEjWo/nQnVhaiDr+1ehHj45VFsDmDs1ssnDQVoZG+Q7PeJr85x1Tnuyhbp6OGtwopVJChEPjy02t3rF+o4lAfqGApU1KmdNeMkmsbSGph+1X44t33UwOoiLJrmroaMMIbF3QyNX/FB1n0HaiiwqcNxfSCWPqQW8QEcllYbdtlDrByrbMDu22y3Xe3jxl8BqMfA+0fr5oVL9Mhtxl3O5v6lgcLcuNNeDqwv9h1rA+rdlakUOnRmWvTBFCCWHn8ak8WEIltyQ/C6QqIWK13K+0FszbKnaPeLj+WT9r4zsHvtNWbJV6I8mwT6Q6wc5qx7xL5sQsp75/Us0s37PFrPCRFlHIDuD8MetlBCsrblmg5jO0A1BcQutUFpqZsKnAXdd+IRbcnGFSa/cbfaGycq/ZCyXxrPS4oQRdpOtSLeZOnfNaZrwt22sZ289H1nSylpegZaiQ3F3jfuyD6JucPweSzVZK1c0X5GobeEBIcMxX9mWHlWpI3ROxSCASSA7PqtBH+s1Cpk+TtPN1+76TCmtyYJUJVjxRwrJN7jAbzmh2rNOmqeBkZa8kjf7yF9MRkHsSFeT1oAxrwXQBD7l+63+IjyNXWK7utLosiEGBkGAW207UUCJwHzFR7lOAC8CtPwtfHQqjn+M8rwoSrR6+fJZeTTKiCY7b/04/aLq7YjixvsxC2g/AlnsdQkZfvDR61i70o7HAtgf0CdW0UMmaC9zA8y0b0H/jZURc6cA3tMwJ9/zZ0t8Pc92T4SFYS13CycNZ1Kf08hkBHBjeLiIKFjPHIB7V7aYWVKdq2EgMsOXyMuzCaOdGTh1iY+2MfbFwNgQpIvE5B8dlpDoFiesKkCds30tZsmNrf/VpwF//gWYf2s59td/hxtRf9/RW7fPO4F+zV2BrLCRS0LKYEZRqYFN9dUhz47R+ZTKHc30zzX4HCqPG2CFLeIG9aZ6Wj5CnrdSKsWYnMTdItu3CVpX4ycb8VRWRu8I8RgecTqsBn2G42bCf5EHx7WlZGLgyszHePzV4IX15Q8LW3heSj7Sl7Aub8crV4uHw5/GicX3Qf/EvgYhICoxBtf7d6riCbOYYjHy9+wmpUUes7tWutaQtMZyvWP93Ui2aNYBG74K+Lb7C7p3eg84Af/Qt5YSbuUd7ENcBEkjf8d8r2W5LoPEdqTsqMNNCygmSJMjoeW2cPI09tf/B+1cX0NfZw5uV3toWgCSf8HYEQ49wVcTj/u/c+Tq0fWiEu9EUf+PKRQNfcm0wefaWvXlove1l8neo96TVE2ZPo6jGNdSv3KNZLBFIg2H0DTlGr0kPO2F54+fj9kHwua739Nxy4FESch6f/TqAfd2H8BkIZ/rkYH4I+sy5jFCsN7D0FHifx/+7AcH+hZ59K9xtdWMlf0qWbuA91BrDp5o4N9N2eeBRAgs65CWbigX7l773TKRx6/HVd5MdssrhS58GY5rIaNJE5oOX1uS0rsb8HAHlJxUxn1kYrXKy+uwHNQKwYXdS2qHhUlUdl+XDaaQDD6lXhU6L8Ftf6HeY5xCZagAVRdBUhxvZOZL43WupvKQrdiLJcrJALc/2JOmeLVINy4IJrurP50MUE05EaMM5JbiMNUvmCKGlhtcFQr6aKaXBswtmb43oykeDexVPhJyxkSTjKSPMqSgdV3S2eUDy7BcR3+wdDGE827SDod4cIv5EFCyW9WFvs0ktXLJwexOKEZydqyIQgARZIfjdMZWjshMVzLltd+4VV8d1qVTXQYVh47zQuAyGKqITVVXuYNAYe+ByjdKxbtQS25ieJAZm8VawnY0RAwCi4sMISgN2OcgwiYQGU2PZOq9iJuq52qJvhtxfsApkBzCjLprTuGooAG3iY6cHpJTHI9aydJNlemTuee98edrTlkJp4WiYchN2emgtO3hY1HgYNxeMmU64b3h5LAXjRquPQaYuyNXOEE2dNTnAse0xF7ZShoE5tATcArJDPOu8XWYBw+n/5/w8UVlMUaEKnGmKkatgGwrNEXZRw3ePGj2r9jRq+7i0/uxIMzak7hIp8ObosmB3eWli/e3/vaKykU1ewsET1PJsn5AcRlaL8GxThrgWDYvpkOzVHP+UBOkSuK1DyPDix9LGQVGq1avI1r9mCpqCRXmhR6PxUnjuGXXo9xGLeY5gjDcKPnLhOve+8he+zhEsEGCCQ0jdkbE2rSmxbG48GKqY4lTyc6cdfCvAEaCBBm5+Nbvv5vuqv+fi+QlFyKncuJ/NCQ64Vmu00D6jMweY+Mey6jjlf5bmzQ11YeM9bexTvId5ml4jvmmtx59UeyftM0+g0QNJ/wJ7XvU2dmer2gT1wctF7tXGVmfiEEIstuCbw6xy+FclR6D9SKzu7ZVBgxRFkGhytKkMDHeKFVsLeivxG+N+fIqkkX/uo5j3tEuGkd6fRYnmzEUsgtNf3iWvGSEZ31nhHKE0NJfx5NpF4c6ypXzlLhf72lDLtgZ35fHXe/3WXvsCY8YJRGns2ha2CSm//Lk9mTa80SZXKsevB/xjux7MRK+NqEAMS54oYgphk1Wo/noFx8RPy6CG2JHErjkhTQ4cC0iBEQT1o4C7J7LsTTetbWpJQO+h0CD1IXo0DAzPgLWopPFTOpzqgiPvQlPqJtQQTQytejUVXVN/R6VkZsMO60NVEKBzW5rwjZ1arWj9+hRAkHdiXs/qBWbnWMXUSo54YoGY/kJhDZPzAGv0doe5pbSrxPQhggMIXrTRQtWAJtthq4Ufiuxy149YCzAJvJl3rYAfaAWtwqgTVBkA43ftO6xXTRfbxbEHvXEgD+M6nRBKX8O1OUpcszO0SpEEE7+3nlBBwA4/RxZaJciFsLCExVEf1AR5y1eom7v3pt1UAfW9uuMsqTWHw7Ef8B+MgrSTrmUmzTQFurJmX6DiW4Vs6A8iaIfk1fa+m8yVdkuk9sUbtLOk1TMEYOOd2JkH6jKZBP85XUQFuWHVWWDJnB8d+9FXlmhzZY0EK1sgqgjVlS7VwMNva4UjVWGGhRfH1HsXcgbdCd9JMdH5dMkXOcvjcUHl8LsEXMjZgz4y+d1fgloaU0dvEmGyORdk5+1GeV2CYmfLZV8BDGneItd6ho8g9xoguhs5Z3ww2WLLep9f81cxgJSsox8KQtiHoeAZPBhW/PRKoHRDd4UM7tjJSB9xQ2wXHT7TGBRBQbH2Kxh/rvHjXG4zpLZ/s9s8sNAMC4cN78OwSVbsOYs2s0dswSwERhYPYr1il4EfQVyfGz9qAMgC9F7HNqTH/KO1rvtk0F3XSM1RCI4Xn/FvR0sw4YAwsfr6e0Ru8W8J5r9+gdYaJjJJ23TKDdjR9qC92HtHQ8rPM+KJpxuU7PqvSA2hPFUzUiQ/cTT9Rz5xPICWGt6IV1yG74mpaRonU7fbBSX1avo1dkIo0QAd5yUXUj1683cZcpyV0eCrOwQHsF8JjOR2+B/VyykbhbmRqfwlvBvYyFgQeOWmBw21rn/dUCrvGq2CfPrLpE00Ltj3/HWSAe0Ki+Szj2646wkK08Jf3s61OMjw1ApC/gZEH5DWptog2hbhEYuZ3zdd2WQ9LgK8Mc+fLagO5E1LRDlk+Q+RFMrF5xvhzqNScTU5cYj0hBoBoGL/BH1/GxxQztf570YjqNmps/67sqOjo6zE4roDz6B8v3bRsCfpdu9VbJ10qWMK58aTi7qkpy0G8jHN5oVRPRMjtOqdsdlBD7cOV5TxF8rZVKma3ZyFh4TOarACbMRsCuOnc/oY5eBU9GmBx6Y6VSHo52PvZE9K92bb3t33Hiy/at+cwhKF4lcNdD8FTtouGKrbJAqnyHQO34B9RnP4PdnqclWN5PQIc97que4xxUdeu1HIicTeMYjn6ToTvNPYF9Qj3uAQKnVHgJRaCV/XNszZ1Whr6ieMwg2xz5cMPJk/nycLCaeTDP9AwIroAiHwVHBPbGHfZHng29xaqsd2g6ZwINrS7Bvu4dtgQ/jfV/Zg4XP65MslMY3miUgMxFWBfd3nYr6ZbXj63FgfDJtRG7AkY+k9PNgfHWlOa+ILsj+u9CoQZ2OJCJWEKYNlKiz9LxP2nnpFtZ1AkQTKpa8eKyUaopgAw1WSSKkdlS0VODg/0gb6+cyB/w22gmageWJzgDglETqnXpvvPtuvvjvjp5XncEm9V8kbOiscIY55EosltQzp8fuihxjPDR4TIxcCyTRqblogG16vGVzRLGA3srZJDBZU8Nj2+OON0c5L9cIB7n1GJLcIUkA3v7lzd89FCm7F/oB48FxzB8upD6tWtneSRfdRcLvVNjg96S1o8hIyvE+S69aZfifRUesjKWkiinuh7SeaYhAVMPdSHl3ghwMwgog6P3WHMhuX4cIX3nUz/1t1ShUTZyZs3+6zyfJ+kXLoSrkMfJCkdxUHWDFSh6kgHuZ37DHfmcxqWTYD7ui17aSxhW9joeOfKxQPsxzaGkGZ5FuWvay1mIfa3CB0G1w7Q/pP2NV/xe0gYKTfEEVBK9usYmJf9pjhr181rc5UoQhMiENNKXkRGfP/2mVfXM9Qf4/n9uggxVs0zY7btAv/xITGDNOFNDKpSeNMAV7OzpQIVrMzZ0e8qcZnOzvF28zz4FSjsjtlDm8lBNsvQ8XzNLXXDJFf5SpNDykV1UC98xjoC+z/0hIL3JTIYn9PlW0FbgTr42reXUtwmjq8EdrFkbSbPyVjbJSCAVQXr/NpCBrzNjBU6rq6KP30pRuC6QxzhIdrHE5+cdzTfX7N88z4IEnpbP6LbpKQ/epx7DYx3hPaABjZUnXhkFXXhCQLWxtOwQRKQjMlfLkflTrI2vuo4bUjS/UGpw831BADkq6aTVvZV17O4Zd7LdDCuJ9kFITZJp+Naqe7lfJ6QolDzENRGgLrRwbuAb3qR+Di2xrhKd2S+KInN8TwEGkEEK6sLIF1FEne56/I+z4QJIUpvl7fSSWgXsIm9sJ/1A03KHz/8djFoZpl8wdepmoe/GlDHw/Qs8e8jgN7lRC3Di2xdefglDlh8fzxrmP9Cv2+Apae8qMptOKu18I1oymBGOCeAYf1v81s/QSpW/nfdnz3mH1GMejw1egFRwiOUdEYQ3bSafi6eoEL5IMgCtF8DgM70AxbxSy38Ln0BuDKrcBpbSA3R09mCozXQdCsP88QoXZq2W2Da0X2ZvoIBlON197EcfDFb3TYno6HRoic/DeBMUbB2iSZFzCvB+G3wCjHZmBE4/8CIRXyTvCfgW3Vn4bWpbg3iz7mGIGoaP6FiYtt5mgaxIXxME6GGpCWbL6iDK7RxBcvl3n0HRhwEnM/5FW9sdmqsbtW6CZGpm64koH0qdTJEQ8uzdexDUqatT4DEkXrp2QXHpmp/oy3W23nCSbmw+94YE3qLMZU8VRnf6EJKf2Fn1fnj7+EcafSZvO2+iahILJ0hebhTlbDOVhyI7mJ1s1Xwp4RKBOrNgPxBA6bhoMzIJliUfZKfY7+kE5GK8lOTLdSk78K1HhkGaS7990RMs7rMDBdGfbTNsGUBDW5wa+R+Oe4yL0/lOlMrQldgYUfoMKs35X2spFgZjHXlwrepLAUOAAAA=" alt="Seahorse">
+            </div>
+        </div>
+
+        <div class="wikipedia-link">
+            <p>For more information about seahorses, visit their <a href="https://en.wikipedia.org/wiki/Seahorse" target="_blank">Wikipedia page</a>.</p>
+        </div>
+    </div>
+
+</body>
+</html>
