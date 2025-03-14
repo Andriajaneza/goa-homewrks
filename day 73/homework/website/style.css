@@ -1,0 +1,171 @@
+/* Colors */
+
+.yellow{
+    color: hsl(47, 88%, 63%);
+}
+
+.white{
+    color: hsl(0, 0%, 100%);
+}
+
+.gray-500{
+    color: hsl(0, 0%, 42%);
+}
+
+.gray-950{
+    color: hsl(0, 0%, 7%);
+}
+
+/* Font-size */
+
+.h1-size{
+    font-size: 65px;
+}
+
+.xx-large{
+    font-size: xx-large;
+}
+
+.p-size{
+    width: 90%;
+    font-size: 40px;
+}
+
+.h3-size{
+    font-size: 35px;
+}
+
+/* Fonts */
+
+@font-face {
+    font-family: Figtree;
+    src: url("https://fonts.google.com/specimen/Figtree");
+}
+
+.Figtree {
+    font-family: Figtree;
+}
+
+/* background colors */
+
+.background-yellow{
+    background: hsl(47, 88%, 63%);
+}
+
+.background-white{
+    background: hsl(0, 0%, 100%);
+}
+
+.background-gray-500{
+    background: hsl(0, 0%, 42%);
+}
+
+.background-gray-950{
+    background: hsl(0, 0%, 7%);
+}
+
+/* possitions */
+
+.AllCenter{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+}
+.center-top{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 25%;
+}
+
+.button-pos{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 15%;
+    top: 52%;
+}
+
+.h1-pos{
+    position: absolute;
+    left: 2.5%;
+    top: 58.5%;
+}
+
+.h3-pos{
+    position: absolute;
+    left: 2.5%;
+    top: 53%;
+}
+
+.p-pos{
+    position: absolute;
+    left: 2.5%;
+    top: 67%;
+}
+
+.avatar-pos{
+    position: absolute;
+    left: 2.5%;
+    top: 90%;
+}
+
+.avatar-text-pos{
+    position: absolute;
+    left: 12%;
+    top: 90%;
+}
+
+/* width & height */
+
+.container-width{
+    width: 800px;
+}
+
+.container-height{
+    height: 1000px;
+}
+
+.img-width{
+    width: 95%;
+}
+
+.img-height{
+    height: 60%;
+}
+
+.button-height{
+    height: 5%;
+}
+
+.button-width{
+    width: 25%;
+}
+
+/* border */
+
+.border-radius-50px{
+    border-radius: 50px;
+}
+
+.border-radius-40px{
+    border-radius: 40px;
+}
+
+.border-radius-5px{
+    border-radius: 5px;
+}
+
+.border-2px{
+    border: 2px solid black;
+}
+
+.border-none{
+    border: none;
+}
+
+/* cursor */
+
+.pointer{
+    cursor: pointer;
+}
