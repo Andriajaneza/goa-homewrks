@@ -1,9 +1,8 @@
 from turtle import *
 
-
 #we want to paint house
 
-#step 1:draw a square
+#draw a square
 
 speed(30)
 
