@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Figtree';
+    src: url("https://fonts.google.com/specimen/Figtree");
+}
+
+body{
+    background-color: hsl(47, 88%, 63%);
+    font-family: 'Figtree';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container{
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 20px;
+    border: 2px solid black;
+    width: 300px;
+    height: 430px;
+}
+
+.image{
+    border-radius: 15px;
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 5%;
+}
+
+.BTN{
+    background-color: hsl(47, 88%, 63%);
+    color: hsl(0, 0%, 7%);
+    border: none;
+    border-radius: 3px;
+    width: 100px;
+    height: 25px;
+    margin-left: 5%;
+    margin-top: 3%;
+}
+
+.date{
+    margin-left: 5%;
+    margin-top: 4%;
+}
+
+.title{
+    font-size: 20px;
+    margin-left: 5%;
+    margin-top: 4%;
+}
+
+.text{
+    color: hsl(0, 0%, 42%);
+    margin-left: 5%;
+    margin-top: 4%;
+    width: 92%;
+}
+
+.profile{
+    width: 45px;
+    height: 45px;
+    margin-left: 5%;
+    margin-top: 7%;
+}
+
+.name{
+    margin-left: 24%;
+    margin-top: -12%;
+}

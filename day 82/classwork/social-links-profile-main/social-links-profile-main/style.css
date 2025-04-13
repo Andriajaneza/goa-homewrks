@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: hsl(0, 0%, 8%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Inter';
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url("https://fonts.google.com/specimen/Inter");
+}
+
+.container{
+    width: 320px;
+    height: 550px;
+    background-color: hsl(0, 0%, 12%);
+    border-radius: 10px;
+}
+
+img{
+    width: 90px;
+    height: 90px;
+    margin-left: 35%;
+    margin-top: 8%;
+    border-radius: 50%;
+}
+
+h1{
+    margin-left: 20%;
+    margin-top: 4%;
+    width: 100%;
+    color: hsl(0, 0%, 100%);
+    font-size: 30px;
+}
+
+h2{
+    color: hsl(75, 94%, 57%);
+    font-size: 15px;
+    margin-left: 25%;
+}
+
+p{
+    color: hsl(0, 0%, 100%);
+    font-size: 15px;
+    margin-left: 16%;
+    margin-top: 5px;
+}
+
+button{
+    margin-top: 15px;
+    margin-left: 10%;
+    width: 80%;
+    height: 50px;
+    background-color: hsl(0, 0%, 20%);
+    border: none;
+    color: hsl(0, 0%, 100%);
+    border-radius: 10px;
+}
