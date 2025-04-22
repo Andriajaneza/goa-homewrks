@@ -1,0 +1,13 @@
+body{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    gap: 70px;
+}
+
+div{
+    height: 100px;
+    width: 30%;
+    background-color: purple;
+}

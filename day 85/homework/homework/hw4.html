@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        const number = document.getElementById("number")
+        num = 0
+        function add() {
+            num = num + 1
+            number.textContent = num
+        }
+    </script>
+</head>
+<body>
+    <button onclick="add()">click to add</button>
+    <p id="number">0</p>
+</body>
+</html>

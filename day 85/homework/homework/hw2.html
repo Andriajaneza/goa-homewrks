@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: aqua;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        h1{
+            color: red;
+        }
+
+        button{
+            width: 250px;
+            height: 50px;
+            background-color: transparent;
+            color: red;
+            border: 3px solid red;
+            border-radius: 50px;
+            cursor: pointer;
+            font-size: 20px;
+            transition: all 100ms ease;
+        }
+        
+        button:hover{
+            color: gold;
+            border: 3px solid gold;
+        }
+    </style>
+</head>
+<body>
+
+    <center>
+        
+        <h1>Sea Horses</h1>
+
+        <button onclick="link()">Go To Sea Horses</button>
+        
+    </center>
+
+    <script>
+        function link() {
+            window.location.href='https://en.wikipedia.org/wiki/Seahorse'
+        }
+    </script>
+</body>
+</html>
