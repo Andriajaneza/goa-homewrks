@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body id="body">
+
+    <h1>Hello</h1>
+
+    <script>
+        const body = document.getElementById("body")
+        let arr = ["red", "blue", "green", "aqua"]
+
+        let RandomNumber = Math.floor( Math.random() * 4)
+
+        body.style.backgroundColor = arr[RandomNumber - 1]
+
+        console.log(RandomNumber)
+    </script>
+</body>
+</html>
