@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ჟირაფები</title>
+</head>
+<body id="body">
+    
+    <h1>ჟირაფები</h1>
+    <button onclick="background()">background</button>
+    <p id="number">0</p>
+    <button onclick="add()">Count ჟირაფები</button>
+
+    <script>
+
+        const body = document.getElementById("body")
+        const number = document.getElementById("number")
+
+        let ჟირაფები = 1
+
+        function add(){
+            ჟირაფები += 1
+            console.log(ჟირაფები)
+            number.textContent = ჟირაფები
+        }
+
+        function background() {
+            body.style.background = "red"
+        }
+
+    </script>
+</body>
+</html>

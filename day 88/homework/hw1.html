@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            background-color: black;
+            display: grid;
+            grid-template-columns: repeat(3 1fr);
+            grid-template-rows: repeat(2 1fr);
+            height: 100vh;
+            gap: 20px;
+        }
+
+        div{
+            border-radius: 10px;
+        }
+
+        .red {background-color: red; grid-column: 1; grid-row: 1;}
+        .orange {background-color: orange; grid-column: 2; grid-row: 1;}
+        .gold {background-color: gold; grid-column: 3; grid-row: 1;}
+        .darkgreen {background-color: darkgreen; grid-column: 1; grid-row: 2;}
+        .green {background-color: green; grid-column: 2; grid-row: 2;}
+        .lime {background-color: lime; grid-column: 3; grid-row: 2;}
+
+    </style>
+</head>
+<body>
+    <div class="red"></div>
+    <div class="orange"></div>
+    <div class="gold"></div>
+    <div class="darkgreen"></div>
+    <div class="green"></div>
+    <div class="lime"></div>
+</body>
+</html>

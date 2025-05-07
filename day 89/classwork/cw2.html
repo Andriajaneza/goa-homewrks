@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <button onclick="right()"></button>
+    <button onclick="left()"></button>
+
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6nSoOWICUz0CEZDDRUKLfq4ZsgKONG_aExA&s" id="img">
+
+    <script>
+        const img = document.getElementById("img")
+        
+        function left() {
+            img.src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVQoMVtHtM6_LZ0P02ovMBd-gjyCikDbJ_Nw&s"
+        }
+
+        function right() {
+            img.src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRinA2sqt0LPEvrxC6Mbpn5qnIEKS1wB58Y8A&s"
+        }
+    </script>
+
+</body>
+</html>
