@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(5, 1fr);
+            gap: 20px;
+            height: 100vh;
+        }  
+
+        div{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 50px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <div style="background-color: aqua; grid-column: 1 / span 3; grid-row: 1;">1</div>
+    <div style="background-color: orangered; grid-column: 1 / span 2; grid-row: 2 / span 2;">2</div>
+    <div style="background-color: blue;">3</div>
+    <div style="background-color: gold;">4</div>
+    <div style="background-color: purple;">5</div>
+    <div style="background-color: lime;">6</div>
+    <div style="background-color: salmon;">7</div>
+    <div style="background-color: rgb(48, 157, 179);">8</div>
+    <div style="background-color: rgb(101, 0, 0);">9</div>
+</body>
+</html>

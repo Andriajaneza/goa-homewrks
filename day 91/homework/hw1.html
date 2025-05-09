@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            transform: translate(-50% ,-50%);
+            position: absolute;
+            left: 50%;
+            top: 25%;
+            font-size: 100px;
+            color: black;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        .buttons{
+            transform: translate(-50% ,-50%);
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            width: 500px;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        button{
+            width: 130px;
+            height: 50px;
+            background-color: rgb(0, 115, 255);
+            border: none;
+            border-radius: 10px;
+            font-size: 40px;
+            color: gold;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+        }
+
+        button:hover{
+            background-color: rgb(62, 149, 255);
+        }
+    </style>
+</head>
+<body>
+    
+    <h1 id="text">0</h1>
+
+    <div class="buttons">
+        <button onclick="reset()">Reset</button>
+        <button onclick="add()">+1</button>
+        <button onclick="remove()">-1</button>
+    </div>
+
+    <script>
+        const text = document.getElementById("text")
+
+        let number = 0
+
+        function add() {
+            number += 1
+            text.textContent = number
+        }
+
+        function remove() {
+            number -= 1
+            text.textContent = number
+        }
+
+        function reset() {
+            number = 0
+            text.textContent = number
+        }
+
+        setInterval(() => {
+            if (number < 0) {
+                number = 0
+                text.textContent = number
+            }
+
+            if (number === 0) {
+                text.style.color = "black"
+            }
+        
+            if (number > 0) {
+                text.style.color = "lime"
+            }
+        }, 10);  
+        
+        // აქ ვერ გამოვიყენებთ While True-ს რადგან ეს საიტს ჭედავს ამიტომ შეგვიძლია
+        // გამოვიყენოთ setInterval რომელიც გარკვეულ დროში ერთხელ აკეთებს ამ ფუნქციას
+        // ამ შემთხვევაში ეს ფუნქცია გაკეთდება ყოველ წამის მეასედში რადგან 1000 არის 1 წამი და აქ წერია 10.
+
+    </script>
+</body>
+</html>

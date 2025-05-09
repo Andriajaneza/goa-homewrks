@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            grid-template-rows: repeat(4, 1fr);
+            gap: 20px;
+            height: 100vh;
+        }   
+
+        div{
+            background-color: lime;
+            border: 2px solid black;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 40px;
+            color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div style="grid-column: 1 / span 5; grid-row: 1;">Header</div>
+    <div style="grid-column: 1; grid-row: 2 / span 2;">Sidebar</div>
+    <div style="grid-column: 2 / span 4; grid-row: 2;">Content 1</div>
+    <div style="grid-column: 2 / span 2; grid-row: 3;">Content 2</div>
+    <div style="grid-column: 4 / span 2; grid-row: 3;">Content 3</div>
+    <div style="grid-column: 1 / span 5; grid-row: 4;">Footer</div>
+</body>
+</html>
