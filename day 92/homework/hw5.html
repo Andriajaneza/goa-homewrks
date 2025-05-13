@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Huawey</title>
+    <style>
+        body{
+            height: 200vh;
+        }
+
+        header{
+            position: absolute;
+            left: 0%;
+            top: 0%;
+            width: 100%;
+            height: 15%;
+            background-color: lime;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 30px;
+            color: white;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            z-index: 1;
+        }
+
+        img{
+            position: fixed;
+            transform: translate(-50%, -50%);
+            left: 50%;
+            top: 50%;
+            width: 700px;
+            height: 400px;
+        }
+
+        footer{
+            position: absolute;
+            left: 0%;
+            top: 188%;
+            width: 100%;
+            height: 15%;
+            background-color: lime;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 30px;
+            color: white;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            z-index: 1;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Huawey</h1>
+    </header>
+
+    <img src="data:image/png;base64,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" alt="logo">
+
+    <footer>
+        <h2>&copy; 2025 Huawey Company</h2>
+    </footer>
+
+</body>
+</html>
