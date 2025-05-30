@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button{
+            background-color: red;
+        }
+        button:hover{
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+
+    <button onclick="broJustDoSomething()">Click</button>
+    <p id="text">Hello</p>
+    <p id="number"></p>
+
+    <script>
+        const body = document.getElementById("body")
+        const text = document.getElementById("text")
+        const number = document.getElementById("number")
+        n = 0
+        function broJustDoSomething() {
+            text.textContent = "World"
+            body.style.backgroundColor = "red"
+            n += 1
+            number.textContent = n
+        }
+    </script>
+
+</body>
+</html>

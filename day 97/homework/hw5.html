@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./cw2.css">
+    <script src="./cw2.js" defer></script>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body{
+        height: 100vh;
+        background-color: rgb(206, 206, 206);
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    nav{
+        position: absolute;
+        left: 0%;
+        top: 0%;
+        width: 100%;
+        height: 90px;
+        background-color: white;
+        display: flex;
+        align-items: center;
+    }
+
+    nav h1{
+        margin-left: 20px;
+    }
+
+    nav button{
+        margin-left: 920px;
+        width: 180px;
+        height: 60px;
+        border: none;
+        border-radius: 50px;
+        border-bottom: 4px solid rgb(140, 140, 140);
+        background-color: rgb(220, 220, 220);
+        cursor: pointer;
+        font-size: 20px;
+    }
+
+    main div{
+        margin-top: 80px;
+        width: 600px;
+        height: 600px;
+        background-color: white;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding-left: 15px;
+        padding-top: 15px;
+    }
+
+    main div p{
+        width: 98%;
+        color: rgb(34, 34, 34);
+    }
+</style>
+<body id="body">
+    <header>
+        <nav id="nav">
+            <h1 id="text">Welcome To Dark Mode Website</h1>
+            <button onclick="ლომი()" id="button">Dark Mode</button>
+        </nav>
+    </header>
+    <main>
+        <div class="container" id="container">
+            <h2 id="text2">Title</h2>
+            <p id="text3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam ab magnam, at optio quos maxime pariatur ea molestiae harum obcaecati earum, consequatur rem reiciendis vitae libero velit dolor commodi? Earum!Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam ab magnam, at optio quos maxime pariatur ea molestiae harum obcaecati earum, consequatur rem reiciendis vitae libero velit dolor commodi? Earum!Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam ab magnam, at optio quos maxime pariatur ea molestiae harum obcaecati earum, consequatur rem reiciendis vitae libero velit dolor commodi? Earum!Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam ab magnam, at optio quos maxime pariatur ea molestiae harum obcaecati earum, consequatur rem reiciendis vitae libero velit dolor commodi? Earum!Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam ab magnam, at optio quos maxime pariatur ea molestiae harum obcaecati earum, consequatur rem reiciendis vitae libero velit dolor commodi? Earum!Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam ab magnam, at optio quos maxime pariatur ea molestiae harum obcaecati earum, consequatur rem reiciendis vitae libero velit dolor commodi? Earum!Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam ab magnam, at optio quos maxime pariatur ea molestiae harum obcaecati earum, consequatur rem reiciendis vitae libero velit dolor commodi? Earum!Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam ab magnam, at optio quos maxime pariatur ea molestiae harum obcaecati earum, consequatur rem reiciendis vitae libero velit dolor commodi? Earum!</p>
+        </div>
+    </main>
+    <script>
+        const body = document.getElementById("body")
+        const nav = document.getElementById("nav")
+        const container = document.getElementById("container")
+        const text = document.getElementById("text")
+        const text2 = document.getElementById("text2")
+        const text3 = document.getElementById("text3")
+        const button = document.getElementById("button")
+
+        let dark = false
+
+        function ლომი() {
+            dark = !dark
+            if (dark === true) {
+                body.style.backgroundColor = "rgb(34, 34, 34)"
+                nav.style.backgroundColor = "rgb(0, 0, 0)"
+                container.style.backgroundColor = "rgb(0, 0, 0)"
+                text.style.color = "rgb(255, 255, 255)"
+                text2.style.color = "rgb(255, 255, 255)"
+                text3.style.color = "rgb(255, 255, 255)"
+                button.style.backgroundColor = "rgb(34, 34, 34)"
+                button.style.color = "rgb(255, 255, 255)"
+                button.style.borderBottom = "4px solid rgb(57, 57, 57)"
+                button.textContent = "Dark"
+            }
+            if (dark === false) {
+                body.style.backgroundColor = "rgb(206, 206, 206)"
+                nav.style.backgroundColor = "rgb(255, 255, 255)"
+                container.style.backgroundColor = "rgb(255, 255, 255)"
+                text.style.color = "rgb(0, 0, 0)"
+                text2.style.color = "rgb(0, 0, 0)"
+                text3.style.color = "rgb(0, 0, 0)"
+                button.style.backgroundColor = "rgb(220, 220, 220)"
+                button.style.color = "rgb(0, 0, 0)"
+                button.style.borderBottom = "4px solid rgb(140, 140, 140)"
+                button.textContent = "Light"
+            }
+        }
+    </script>
+</body>
+</html>
