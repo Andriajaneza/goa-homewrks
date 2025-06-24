@@ -1,0 +1,870 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harmonex - Music Player</title>
+    <link rel="stylesheet" href="./assets/fonts/roboto.css">
+    <link rel="stylesheet" href="./assets/fonts/poppins.css">
+    <link rel="stylesheet" href="./styles/home.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="./scripts/videos.js" defer></script>
+    <script src="./scripts/search.js" defer></script>
+    <script src="./scripts/design.js" defer></script>
+    <script src="./scripts/generator.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <h1 onclick="window.location.href='home.html'" class="text">Harmonex</h1>
+            <i class="bx bxs-home" onclick="window.location.href='home.html'" class="text"></i>
+            <button class="BTN1"><i class="bx bxs-crown"></i>Explore Premium</button>
+            <button class="BTN2"><i class="bx bx-down-arrow-alt"></i>Instal App</button>
+            <i class="bx bxs-pencil" onclick="edit()"></i>
+            <i class="bx bxs-bell"></i>
+            <i class="bx bxs-user"></i>
+            <div class="search">
+                <input type="text" placeholder="Search...">
+                <i class="bx bx-search"></i>
+            </div>
+        </nav>
+    </header>
+    <section class="playing">
+        <img src="">
+        <h2></h2>
+        <i class="bx bx-pause pause" onclick="pause()"></i>
+        <i class="bx bx-rewind" onclick="rewind()"></i>
+        <i class="bx bx-fast-forward" onclick="forward()"></i>
+        <i class="bx bxs-volume-full volume" onclick="volume()"></i>
+    </section>
+    <section class="musics">
+        <div class="music" id="my ordinary life" onclick="myOrdinaryLife()">
+            <img src="./assets/images/my-ordinary-life.jpg">
+            <p>My Ordinary Life</p>
+            <i class="bx bx-play"></i>
+        </div>
+        <div class="music" id="believer" onclick="believer()">
+            <img src="./assets/images/believer.jpg">
+            <p>Believer</p>
+            <i class="bx bx-play"></i>
+        </div>
+        <div class="music" id="notion" onclick="notion()">
+            <img src="./assets/images/notion.jpg">
+            <p>Notion</p>
+            <i class="bx bx-play"></i>
+        </div>
+        <div class="music" id="skyfall" onclick="skyfall()">
+            <img src="./assets/images/skyfall.jpg">
+            <p>Skyfall</p>
+            <i class="bx bx-play"></i>
+        </div>
+        <div class="music" id="empire" onclick="empire()">
+            <img src="./assets/images/empire.jpg">
+            <p>Empire</p>
+            <i class="bx bx-play"></i>
+        </div>
+        <div class="music" id="daylight" onclick="daylight()">
+            <img src="./assets/images/daylight.jpg">
+            <p>Daylight</p>
+            <i class="bx bx-play"></i>
+        </div>
+        <div class="music" id="counting stars" onclick="countingStars()">
+            <img src="./assets/images/counting-stars.jpg">
+            <p>Counting Stars</p>
+            <i class="bx bx-play"></i>
+        </div>
+        <div class="music" id="hope" onclick="hope()">
+            <img src="./assets/images/hope.jpg">
+            <p>Hope</p>
+            <i class="bx bx-play"></i>
+        </div>
+        <div class="music" id="7 years" onclick="sevenYears()">
+            <img src="./assets/images/7-years.jpg">
+            <p>7 Years</p>
+            <i class="bx bx-play"></i>
+        </div>
+        <div class="music" id="enemy" onclick="enemy()">
+            <img src="./assets/images/enemy.jpg">
+            <p>Enemy</p>
+            <i class="bx bx-play"></i>
+        </div>
+        <div class="music" id="centuries" onclick="centuries()">
+            <img src="./assets/images/centuries.jpg">
+            <p>Centuries</p>
+            <i class="bx bx-play"></i>
+        </div>
+        <div class="music" id="stressed out" onclick="stressedOut()">
+            <img src="./assets/images/stressed-out.jpg">
+            <p>Stressed Out</p>
+            <i class="bx bx-play"></i>
+        </div>
+        <div class="music" id="diamonds" onclick="diamonds()">
+            <img src="./assets/images/diamonds.jpg">
+            <p>Diamonds</p>
+            <i class="bx bx-play"></i>
+        </div>
+        <div class="music" id="die with a smile" onclick="dieWithASmile()">
+            <img src="./assets/images/die-with-a-smile.jpg">
+            <p>Die With A Smile</p>
+            <i class="bx bx-play"></i>
+        </div>
+        <div class="music" id="sigma boy" onclick="sigmaBoy()">
+            <img src="./assets/images/sigma-boy.jpg">
+            <p>Sigma Boy</p>
+            <i class="bx bx-play"></i>
+        </div>
+        <div class="music" id="espresso macchiato" onclick="espressoMacchiato()">
+            <img src="./assets/images/espresso-macchiato.jpg">
+            <p>Espresso Macchiato</p>
+            <i class="bx bx-play"></i>
+        </div>
+        <div class="music" id="forever young" onclick="foreverYoung()">
+            <img src="./assets/images/forever-young.jpg">
+            <p>Forever Young</p>
+            <i class="bx bx-play"></i>
+        </div>
+        <div class="music" id="riptide" onclick="riptide()">
+            <img src="./assets/images/riptide.jpg">
+            <p>Riptide</p>
+            <i class="bx bx-play"></i>
+        </div>
+        <div class="music" id="ordinary" onclick="ordinary()">
+            <img src="./assets/images/ordinary.jpg">
+            <p>Ordinary</p>
+            <i class="bx bx-play"></i>
+        </div>
+        <div class="music" id="bye bye bye" onclick="byeByeBye()">
+            <img src="./assets/images/bye-bye-bye.jpg">
+            <p>Bye Bye Bye</p>
+            <i class="bx bx-play"></i>
+        </div>
+        <div class="music" id="memories" onclick="memories()">
+            <img src="./assets/images/memories.jpg">
+            <p>Memories</p>
+            <i class="bx bx-play"></i>
+        </div>
+        <div class="music" id="wellerman" onclick="wellerman()">
+            <img src="./assets/images/wellerman.jpg">
+            <p>Wellerman</p>
+            <i class="bx bx-play"></i>
+        </div>
+        <div class="music" id="breathe" onclick="breathe()">
+            <img src="./assets/images/breathe.jpg">
+            <p>Breathe</p>
+            <i class="bx bx-play"></i>
+        </div>
+        <div class="music" id="shape of you" onclick="shapeOfYou()">
+            <img src="./assets/images/shape-of-you.jpg">
+            <p>Shape Of You</p>
+            <i class="bx bx-play"></i>
+        </div>
+        <div class="music" id="show must go on" onclick="showMustGoOn()">
+            <img src="./assets/images/show-must-go-on.jpg">
+            <p>Show Must Go On</p>
+            <i class="bx bx-play"></i>
+        </div>
+        <div class="music" id="impossible" onclick="impossible()">
+            <img src="./assets/images/impossible.jpg">
+            <p>Impossible</p>
+            <i class="bx bx-play"></i>
+        </div>
+        <div class="music" id="7 rings" onclick="sevenRings()">
+            <img src="./assets/images/7-rings.jpg">
+            <p>7 Rings</p>
+            <i class="bx bx-play"></i>
+        </div>
+        <div class="music" id="heart attack" onclick="heartAttack()">
+            <img src="./assets/images/heart-attack.jpg">
+            <p>Heart Attack</p>
+            <i class="bx bx-play"></i>
+        </div>
+        <div class="music" id="with you" onclick="withYou()">
+            <img src="./assets/images/with-you.jpg">
+            <p>With You</p>
+            <i class="bx bx-play"></i>
+        </div>
+        <div class="music" id="smile" onclick="smile()">
+            <img src="./assets/images/smile.jpg">
+            <p>Smile</p>
+            <i class="bx bx-play"></i>
+        </div>
+        <div class="music" id="" onclick="demons()">
+            <img src="./assets/images/demons.jpg">
+            <p>Demons</p>
+            <i class="bx bx-play"></i>
+        </div>
+        <div class="music" id="" onclick="anxiety()">
+            <img src="./assets/images/anxiety.jpg">
+            <p>Anxiety</p>
+            <i class="bx bx-play"></i>
+        </div>
+        <div class="music" id="" onclick="saoPaulo()">
+            <img src="./assets/images/sao-paulo.jpg">
+            <p>Sao Paulo</p>
+            <i class="bx bx-play"></i>
+        </div>
+        <div class="music" id="" onclick="quicksand()">
+            <img src="./assets/images/quicksand.jpg">
+            <p>Quicksand</p>
+            <i class="bx bx-play"></i>
+        </div>
+        <div class="music" id="" onclick="sweetBee()">
+            <img src="./assets/images/sweet-bee.jpg">
+            <p>Sweet Bee</p>
+            <i class="bx bx-play"></i>
+        </div>
+        <div class="music" id="unstoppable" onclick="unstoppable()">
+            <img src="./assets/images/unstoppable.jpg">
+            <p>Unstoppable</p>
+            <i class="bx bx-play"></i>
+        </div>
+        <div class="music" id="middleOfTheNight" onclick="middleOfTheNight()">
+            <img src="./assets/images/middle-of-the-night.jpg">
+            <p>Middle Of The Night</p>
+            <i class="bx bx-play"></i>
+        </div>
+        <div class="music" id="runaway" onclick="runaway()">
+            <img src="./assets/images/runaway.jpg">
+            <p>Runaway</p>
+            <i class="bx bx-play"></i>
+        </div>
+        <div class="music" id="bones" onclick="bones()">
+            <img src="./assets/images/bones.jpg">
+            <p>Bones</p>
+            <i class="bx bx-play"></i>
+        </div>
+        <div class="music" id="teeth" onclick="teeth()">
+            <img src="./assets/images/teeth.jpg">
+            <p>Teeth</p>
+            <i class="bx bx-play"></i>
+        </div>
+        <div class="music" id="control" onclick="control()">
+            <img src="./assets/images/control.jpg">
+            <p>Control</p>
+            <i class="bx bx-play"></i>
+        </div>
+        <div class="music" id="dandelions" onclick="dandelions()">
+            <img src="./assets/images/dandelions.jpg">
+            <p>Dandelions</p>
+            <i class="bx bx-play"></i>
+        </div>
+        <div class="music" id="arcade" onclick="arcade()">
+            <img src="./assets/images/arcade.jpg">
+            <p>Arcade</p>
+            <i class="bx bx-play"></i>
+        </div>
+        <div class="music" id="untilIFoundYou" onclick="untilIFoundYou()">
+            <img src="./assets/images/until-i-found-you.jpg">
+            <p>Until I Found You</p>
+            <i class="bx bx-play"></i>
+        </div>
+        <div class="music" id="inTheStars" onclick="inTheStars()">
+            <img src="./assets/images/in-the-stars.jpg">
+            <p>In The Stars</p>
+            <i class="bx bx-play"></i>
+        </div>
+        <div class="music" id="enemyWithin" onclick="enemyWithin()">
+            <img src="./assets/images/enemy-within.jpg">
+            <p>Enemy Within</p>
+            <i class="bx bx-play"></i>
+        </div>
+        <div class="music" id="falling" onclick="falling()">
+            <img src="./assets/images/falling.jpg">
+            <p>Falling</p>
+            <i class="bx bx-play"></i>
+        </div>
+        <div class="music" id="asItWas" onclick="asItWas()">
+            <img src="./assets/images/as-it-was.jpg">
+            <p>As It Was</p>
+            <i class="bx bx-play"></i>
+        </div>
+        <div class="music" id="darkside" onclick="darkside()">
+            <img src="./assets/images/darkside.jpg">
+            <p>Darkside</p>
+            <i class="bx bx-play"></i>
+        </div>
+        <div class="music" id="badLiar" onclick="badLiar()">
+            <img src="./assets/images/bad-liar.jpg">
+            <p>Bad Liar</p>
+            <i class="bx bx-play"></i>
+        </div>
+        <div class="music" id="wolves" onclick="wolves()">
+            <img src="./assets/images/wolves.jpg">
+            <p>Wolves</p>
+            <i class="bx bx-play"></i>
+        </div>
+        <div class="music" id="lovely" onclick="lovely()">
+            <img src="./assets/images/lovely.jpg">
+            <p>Lovely</p>
+            <i class="bx bx-play"></i>
+        </div>
+        <div class="music" id="takeMeToChurch" onclick="takeMeToChurch()">
+            <img src="./assets/images/take-me-to-church.jpg">
+            <p>Take Me To Church</p>
+            <i class="bx bx-play"></i>
+        </div>
+        <div class="music" id="fallingDown" onclick="fallingDown()">
+            <img src="./assets/images/falling-down.jpg">
+            <p>Falling Down</p>
+            <i class="bx bx-play"></i>
+        </div>
+        <div class="music" id="letMeDownSlowly" onclick="letMeDownSlowly()">
+            <img src="./assets/images/let-me-down-slowly.jpg">
+            <p>Let Me Down Slowly</p>
+            <i class="bx bx-play"></i>
+        </div>
+        <div class="music" id="arcadeSad" onclick="arcadeSad()">
+            <img src="./assets/images/arcade-sad.jpg">
+            <p>Arcade (Sad Version)</p>
+            <i class="bx bx-play"></i>
+        </div>
+        <div class="music" id="iWasNeverThere" onclick="iWasNeverThere()">
+            <img src="./assets/images/i-was-never-there.jpg">
+            <p>I Was Never There</p>
+            <i class="bx bx-play"></i>
+        </div>
+        <div class="music" id="ghost" onclick="ghost()">
+            <img src="./assets/images/ghost.jpg">
+            <p>Ghost</p>
+            <i class="bx bx-play"></i>
+        </div>
+        <div class="music" id="afterDark" onclick="afterDark()">
+            <img src="./assets/images/after-dark.jpg">
+            <p>After Dark</p>
+            <i class="bx bx-play"></i>
+        </div>
+        <div class="music" id="theNights" onclick="theNights()">
+            <img src="./assets/images/the-nights.jpg">
+            <p>The Nights</p>
+            <i class="bx bx-play"></i>
+        </div>
+        <div class="music" id="ride" onclick="ride()">
+            <img src="./assets/images/ride.jpg">
+            <p>Ride</p>
+            <i class="bx bx-play"></i>
+        </div>
+        <div class="music" id="badDream" onclick="badDream()">
+            <img src="./assets/images/bad-dream.jpg">
+            <p>Bad Dream</p>
+            <i class="bx bx-play"></i>
+        </div>
+        <div class="music" id="grace" onclick="grace()">
+            <img src="./assets/images/grace.jpg">
+            <p>Grace</p>
+            <i class="bx bx-play"></i>
+        </div>
+        <div class="music" id="euphoria" onclick="euphoria()">
+            <img src="./assets/images/euphoria.jpg">
+            <p>Euphoria</p>
+            <i class="bx bx-play"></i>
+        </div>
+        <div class="music" id="monsters" onclick="monsters()">
+            <img src="./assets/images/monsters.jpg">
+            <p>Monsters</p>
+            <i class="bx bx-play"></i>
+        </div>
+        <div class="music" id="withoutMe" onclick="withoutMe()">
+            <img src="./assets/images/without-me.jpg">
+            <p>Without Me</p>
+            <i class="bx bx-play"></i>
+        </div>
+        <div class="music" id="itsYou" onclick="itsYou()">
+            <img src="./assets/images/its-you.jpg">
+            <p>It’s You</p>
+            <i class="bx bx-play"></i>
+        </div>
+        <div class="music" id="talkingToTheMoon" onclick="talkingToTheMoon()">
+            <img src="./assets/images/talking-to-the-moon.jpg">
+            <p>Talking to the Moon</p>
+            <i class="bx bx-play"></i>
+        </div>
+        <div class="music" id="whenImGone" onclick="whenImGone()">
+            <img src="./assets/images/when-im-gone.jpg">
+            <p>When I’m Gone</p>
+            <i class="bx bx-play"></i>
+        </div>
+        <div class="music" id="sweetButPsycho" onclick="sweetButPsycho()">
+            <img src="./assets/images/sweet-but-psycho.jpg">
+            <p>Sweet But Psycho</p>
+            <i class="bx bx-play"></i>
+        </div>
+        <div class="music" id="underneathTheTree" onclick="underneathTheTree()">
+            <img src="./assets/images/underneath-the-tree.jpg">
+            <p>Underneath the Tree</p>
+            <i class="bx bx-play"></i>
+        </div>
+        <div class="music" id="heatWaves" onclick="heatWaves()">
+            <img src="./assets/images/heat-waves.jpg">
+            <p>Heat Waves</p>
+            <i class="bx bx-play"></i>
+        </div>
+        <div class="music" id="illusion" onclick="illusion()">
+            <img src="./assets/images/illusion.jpg">
+            <p>Illusion</p>
+            <i class="bx bx-play"></i>
+        </div>
+        <div class="music" id="electric love" onclick="electricLove()">
+            <img src="./assets/images/electric-love.jpg">
+            <p>Electric Love</p>
+            <i class="bx bx-play"></i>
+        </div>
+        <div class="music" id="past lives" onclick="pastLives()">
+            <img src="./assets/images/past-lives.jpg">
+            <p>Past Lives</p>
+            <i class="bx bx-play"></i>
+        </div>
+        <div class="music" id="love nwantiti" onclick="loveNwantiti()">
+            <img src="./assets/images/love-nwantiti.jpg">
+            <p>Love Nwantiti</p>
+            <i class="bx bx-play"></i>
+        </div>
+        <div class="music" id="i wanna be yours" onclick="iWannaBeYours()">
+            <img src="./assets/images/i-wanna-be-yours.jpg">
+            <p>I Wanna Be Yours</p>
+            <i class="bx bx-play"></i>
+        </div>
+        <div class="music" id="secrets" onclick="secrets()">
+            <img src="./assets/images/secrets.jpg">
+            <p>Secrets</p>
+            <i class="bx bx-play"></i>
+        </div>
+        <div class="music" id="bones of gold" onclick="bonesOfGold()">
+            <img src="./assets/images/bones-of-gold.jpg">
+            <p>Bones of Gold</p>
+            <i class="bx bx-play"></i>
+        </div>
+        <div class="music" id="who" onclick="who()">
+            <img src="./assets/images/who.jpg">
+            <p>Who</p>
+            <i class="bx bx-play"></i>
+        </div>
+        <div class="music" id="dancing with your ghost" onclick="dancingWithYourGhost()">
+            <img src="./assets/images/dancing-with-your-ghost.jpg">
+            <p>Dancing With Your Ghost</p>
+            <i class="bx bx-play"></i>
+        </div>
+        <div class="music" id="cold" onclick="cold()">
+            <img src="./assets/images/cold.jpg">
+            <p>Cold</p>
+            <i class="bx bx-play"></i>
+        </div>
+        <div class="music" id="mad at disney" onclick="madAtDisney()">
+            <img src="./assets/images/mad-at-disney.jpg">
+            <p>Mad at Disney</p>
+            <i class="bx bx-play"></i>
+        </div>
+        <div class="music" id="i see red" onclick="iSeeRed()">
+            <img src="./assets/images/i-see-red.jpg">
+            <p>I See Red</p>
+            <i class="bx bx-play"></i>
+        </div>
+        <div class="music" id="run" onclick="run()">
+            <img src="./assets/images/run.jpg">
+            <p>Run</p>
+            <i class="bx bx-play"></i>
+        </div>
+        <div class="music" id="freaks" onclick="freaks()">
+            <img src="./assets/images/freaks.jpg">
+            <p>Freaks</p>
+            <i class="bx bx-play"></i>
+        </div>
+        <div class="music" id="build a bitch" onclick="buildABitch()">
+            <img src="./assets/images/build-a-bitch.jpg">
+            <p>Build A Bitch</p>
+            <i class="bx bx-play"></i>
+        </div>
+        <div class="music" id="deep end" onclick="deepEnd()">
+            <img src="./assets/images/deep-end.jpg">
+            <p>Deep End</p>
+            <i class="bx bx-play"></i>
+        </div>
+        <div class="music" id="lonely" onclick="lonely()">
+            <img src="./assets/images/lonely.jpg">
+            <p>Lonely</p>
+            <i class="bx bx-play"></i>
+        </div>
+        <div class="music" id="paris" onclick="paris()">
+            <img src="./assets/images/paris.jpg">
+            <p>Paris</p>
+            <i class="bx bx-play"></i>
+        </div>
+        <div class="music" id="run boy run" onclick="runBoyRun()">
+            <img src="./assets/images/run-boy-run.jpg">
+            <p>Run Boy Run</p>
+            <i class="bx bx-play"></i>
+        </div>
+        <div class="music" id="talk" onclick="talk()">
+            <img src="./assets/images/talk.jpg">
+            <p>Talk</p>
+            <i class="bx bx-play"></i>
+        </div>
+        <div class="music" id="sugar crash" onclick="sugarCrash()">
+            <img src="./assets/images/sugar-crash.jpg">
+            <p>Sugar Crash</p>
+            <i class="bx bx-play"></i>
+        </div>
+        <div class="music" id="train wreck" onclick="trainWreck()">
+            <img src="./assets/images/train-wreck.jpg">
+            <p>Train Wreck</p>
+            <i class="bx bx-play"></i>
+        </div>
+        <div class="music" id="left and right" onclick="leftAndRight()">
+            <img src="./assets/images/left-and-right.jpg">
+            <p>Left and Right</p>
+            <i class="bx bx-play"></i>
+        </div>
+        <div class="music" id="dollhouse" onclick="dollhouse()">
+            <img src="./assets/images/dollhouse.jpg">
+            <p>Dollhouse</p>
+            <i class="bx bx-play"></i>
+        </div>
+        <div class="music" id="echo" onclick="echo()">
+            <img src="./assets/images/echo.jpg">
+            <p>Echo</p>
+            <i class="bx bx-play"></i>
+        </div>
+        <div class="music" id="gasoline" onclick="gasoline()">
+            <img src="./assets/images/gasoline.jpg">
+            <p>Gasoline</p>
+            <i class="bx bx-play"></i>
+        </div>
+        <div class="music" id="runaway baby" onclick="runawayBaby()">
+            <img src="./assets/images/runaway-baby.jpg">
+            <p>Runaway Baby</p>
+            <i class="bx bx-play"></i>
+        </div>
+        <div class="music" id="astronaut in the ocean" onclick="astronautInTheOcean()">
+            <img src="./assets/images/astronaut-in-the-ocean.jpg">
+            <p>Astronaut In The Ocean</p>
+            <i class="bx bx-play"></i>
+        </div>
+        <div class="music" id="good 4 u" onclick="good4U()">
+            <img src="./assets/images/good-4-u.jpg">
+            <p>Good 4 U</p>
+            <i class="bx bx-play"></i>
+        </div>
+        <div class="music" id="traitor" onclick="traitor()">
+            <img src="./assets/images/traitor.jpg">
+            <p>Traitor</p>
+            <i class="bx bx-play"></i>
+        </div>
+        <div class="music" id="lovely day" onclick="lovelyDay()">
+            <img src="./assets/images/lovely-day.jpg">
+            <p>Lovely Day</p>
+            <i class="bx bx-play"></i>
+        </div>
+        <div class="music" id="apologize" onclick="apologize()">
+            <img src="./assets/images/apologize.jpg">
+            <p>Apologize</p>
+            <i class="bx bx-play"></i>
+        </div>
+        <div class="music" id="say something" onclick="saySomething()">
+            <img src="./assets/images/say-something.jpg">
+            <p>Say Something</p>
+            <i class="bx bx-play"></i>
+        </div>
+        <div class="music" id="idfc" onclick="idfc()">
+            <img src="./assets/images/idfc.jpg">
+            <p>IDFC</p>
+            <i class="bx bx-play"></i>
+        </div>
+        <div class="music" id="everybody wants to rule the world" onclick="everybodyWantsToRuleTheWorld()">
+            <img src="./assets/images/everybody-wants-to-rule-the-world.jpg">
+            <p>Everybody Wants To Rule The World</p>
+            <i class="bx bx-play"></i>
+        </div>
+        <div class="music" id="bury a friend" onclick="buryAFriend()">
+            <img src="./assets/images/bury-a-friend.jpg">
+            <p>Bury a Friend</p>
+            <i class="bx bx-play"></i>
+        </div>
+        <div class="music" id="bad guy" onclick="badGuy()">
+            <img src="./assets/images/bad-guy.jpg">
+            <p>Bad Guy</p>
+            <i class="bx bx-play"></i>
+        </div>
+        <div class="music" id="loving you" onclick="lovingYou()">
+            <img src="./assets/images/loving-you.jpg">
+            <p>Loving You</p>
+            <i class="bx bx-play"></i>
+        </div>
+        <div class="music" id="nothing breaks like a heart" onclick="nothingBreaksLikeAHeart()">
+            <img src="./assets/images/nothing-breaks-like-a-heart.jpg">
+            <p>Nothing Breaks Like A Heart</p>
+            <i class="bx bx-play"></i>
+        </div>
+        <div class="music" id="let her go" onclick="letHerGo()">
+            <img src="./assets/images/let-her-go.jpg">
+            <p>Let Her Go</p>
+            <i class="bx bx-play"></i>
+        </div>
+        <div class="music" id="stay" onclick="stay()">
+            <img src="./assets/images/stay.jpg">
+            <p>Stay</p>
+            <i class="bx bx-play"></i>
+        </div>
+        <div class="music" id="faded" onclick="faded()">
+            <img src="./assets/images/faded.jpg">
+            <p>Faded</p>
+            <i class="bx bx-play"></i>
+        </div>
+        <div class="music" id="bellyache" onclick="bellyache()">
+            <img src="./assets/images/bellyache.jpg">
+            <p>Bellyache</p>
+            <i class="bx bx-play"></i>
+        </div>
+        <div class="music" id="pain" onclick="pain()">
+            <img src="./assets/images/pain.jpg">
+            <p>Pain</p>
+            <i class="bx bx-play"></i>
+        </div>
+        <div class="music" id="waiting for love" onclick="waitingForLove()">
+            <img src="./assets/images/waiting-for-love.jpg">
+            <p>Waiting For Love</p>
+            <i class="bx bx-play"></i>
+        </div>
+        <div class="music" id="before you go" onclick="beforeYouGo()">
+            <img src="./assets/images/before-you-go.jpg">
+            <p>Before You Go</p>
+            <i class="bx bx-play"></i>
+        </div>
+        <div class="music" id="love me like you do" onclick="loveMeLikeYouDo()">
+            <img src="./assets/images/love-me-like-you-do.jpg">
+            <p>Love Me Like You Do</p>
+            <i class="bx bx-play"></i>
+        </div>
+        <div class="music" id="thunder" onclick="thunder()">
+            <img src="./assets/images/thunder.jpg">
+            <p>Thunder</p>
+            <i class="bx bx-play"></i>
+        </div>
+        <div class="music" id="ride it" onclick="rideIt()">
+            <img src="./assets/images/ride-it.jpg">
+            <p>Ride It</p>
+            <i class="bx bx-play"></i>
+        </div>
+        <div class="music" id="under the influence" onclick="underTheInfluence()">
+            <img src="./assets/images/under-the-influence.jpg">
+            <p>Under The Influence</p>
+            <i class="bx bx-play"></i>
+        </div>
+        <div class="music" id="creep" onclick="creep()">
+            <img src="./assets/images/creep.jpg">
+            <p>Creep</p>
+            <i class="bx bx-play"></i>
+        </div>
+        <div class="music" id="running up that hill" onclick="runningUpThatHill()">
+            <img src="./assets/images/running-up-that-hill.jpg">
+            <p>Running Up That Hill</p>
+            <i class="bx bx-play"></i>
+        </div>
+        <div class="music" id="shivers" onclick="shivers()">
+            <img src="./assets/images/shivers.jpg">
+            <p>Shivers</p>
+            <i class="bx bx-play"></i>
+        </div>
+        <div class="music" id="wildest dreams" onclick="wildestDreams()">
+            <img src="./assets/images/wildest-dreams.jpg">
+            <p>Wildest Dreams</p>
+            <i class="bx bx-play"></i>
+        </div>
+        <div class="music" id="mirror" onclick="mirror()">
+            <img src="./assets/images/mirror.jpg">
+            <p>Mirror</p>
+            <i class="bx bx-play"></i>
+        </div>
+        <div class="music" id="animal" onclick="animal()">
+            <img src="./assets/images/animal.jpg">
+            <p>Animal</p>
+            <i class="bx bx-play"></i>
+        </div>
+        <div class="music" id="the ocean" onclick="theOcean()">
+            <img src="./assets/images/the-ocean.jpg">
+            <p>The Ocean</p>
+            <i class="bx bx-play"></i>
+        </div>
+        <div class="music" id="in the end" onclick="inTheEnd()">
+            <img src="./assets/images/in-the-end.jpg">
+            <p>In The End</p>
+            <i class="bx bx-play"></i>
+        </div>
+        <div class="music" id="blinding lights" onclick="blindingLights()">
+            <img src="./assets/images/blinding-lights.jpg">
+            <p>Blinding Lights</p>
+            <i class="bx bx-play"></i>
+        </div>
+        <div class="music" id="black sea" onclick="blackSea()">
+            <img src="./assets/images/black-sea.jpg">
+            <p>Black Sea</p>
+            <i class="bx bx-play"></i>
+        </div>
+        <div class="music" id="rumors" onclick="rumors()">
+            <img src="./assets/images/rumors.jpg">
+            <p>Rumors</p>
+            <i class="bx bx-play"></i>
+        </div>
+        <div class="music" id="mad world" onclick="madWorld()">
+            <img src="./assets/images/mad-world.jpg">
+            <p>Mad World</p>
+            <i class="bx bx-play"></i>
+        </div>
+        <div class="music" id="cupid" onclick="cupid()">
+            <img src="./assets/images/cupid.jpg">
+            <p>Cupid</p>
+            <i class="bx bx-play"></i>
+        </div>
+        <div class="music" id="snowman" onclick="snowman()">
+            <img src="./assets/images/snowman.jpg">
+            <p>Snowman</p>
+            <i class="bx bx-play"></i>
+        </div>
+        <div class="music" id="gold" onclick="gold()">
+            <img src="./assets/images/gold.jpg">
+            <p>Gold</p>
+            <i class="bx bx-play"></i>
+        </div>
+        <div class="music" id="team" onclick="team()">
+            <img src="./assets/images/team.jpg">
+            <p>Team</p>
+            <i class="bx bx-play"></i>
+        </div>
+        <div class="music" id="numb" onclick="numb()">
+            <img src="./assets/images/numb.jpg">
+            <p>Numb</p>
+            <i class="bx bx-play"></i>
+        </div>
+        <div class="music" id="creatures" onclick="creatures()">
+            <img src="./assets/images/creatures.jpg">
+            <p>Creatures</p>
+            <i class="bx bx-play"></i>
+        </div>
+        <div class="music" id="bad habits" onclick="badHabits()">
+            <img src="./assets/images/bad-habits.jpg">
+            <p>Bad Habits</p>
+            <i class="bx bx-play"></i>
+        </div>
+        <div class="music" id="eyes blue like the atlantic" onclick="eyesBlueLikeTheAtlantic()">
+            <img src="./assets/images/eyes-blue-like-the-atlantic.jpg">
+            <p>Eyes Blue Like The Atlantic</p>
+            <i class="bx bx-play"></i>
+        </div>
+        <div class="music" id="lips are movin" onclick="lipsAreMovin()">
+            <img src="./assets/images/lips-are-movin.jpg">
+            <p>Lips Are Movin</p>
+            <i class="bx bx-play"></i>
+        </div>
+        <div class="music" id="better now" onclick="betterNow()">
+            <img src="./assets/images/better-now.jpg">
+            <p>Better Now</p>
+            <i class="bx bx-play"></i>
+        </div>
+        <div class="music" id="someone you loved" onclick="someoneYouLoved()">
+            <img src="./assets/images/someone-you-loved.jpg">
+            <p>Someone You Loved</p>
+            <i class="bx bx-play"></i>
+        </div>
+        <div class="music" id="closer" onclick="closer()">
+            <img src="./assets/images/closer.jpg">
+            <p>Closer</p>
+            <i class="bx bx-play"></i>
+        </div>
+        <div class="music" id="shape of my heart" onclick="shapeOfMyHeart()">
+            <img src="./assets/images/shape-of-my-heart.jpg">
+            <p>Shape Of My Heart</p>
+            <i class="bx bx-play"></i>
+        </div>
+        <div class="music" id="the box" onclick="theBox()">
+            <img src="./assets/images/the-box.jpg">
+            <p>The Box</p>
+            <i class="bx bx-play"></i>
+        </div>
+        <div class="music" id="sunroof" onclick="sunroof()">
+            <img src="./assets/images/sunroof.jpg">
+            <p>Sunroof</p>
+            <i class="bx bx-play"></i>
+        </div>
+        <div class="music" id="moral of the story" onclick="moralOfTheStory()">
+            <img src="./assets/images/moral-of-the-story.jpg">
+            <p>Moral Of The Story</p>
+            <i class="bx bx-play"></i>
+        </div>
+        <div class="music" id="do it to it" onclick="doItToIt()">
+            <img src="./assets/images/do-it-to-it.jpg">
+            <p>Do It To It</p>
+            <i class="bx bx-play"></i>
+        </div>
+        <div class="music" id="telepatia" onclick="telepatia()">
+            <img src="./assets/images/telepatia.jpg">
+            <p>Telepatía</p>
+            <i class="bx bx-play"></i>
+        </div>
+        <div class="music" id="levitating" onclick="levitating()">
+            <img src="./assets/images/levitating.jpg">
+            <p>Levitating</p>
+            <i class="bx bx-play"></i>
+        </div>
+    </section>
+    <section class="edit">
+        <h2 class="theme">Theme</h2>
+        <div class="colors">
+            <div class="color" onclick="color0e0e0e()" style="background-color: #0e0e0e;"></div>
+            <div class="color" onclick="color0044e3()" style="background-color: #0044e3;"></div>
+            <div class="color" onclick="color5865f2()" style="background-color: #5865f2;"></div>
+            <div class="color" onclick="color3498db()" style="background-color: #3498db;"></div>
+            <div class="color" onclick="color7289da()" style="background-color: #7289da;"></div>
+            <div class="color" onclick="colorc1dcff()" style="background-color: #c1dcff;"></div>
+            <div class="color" onclick="color9b59b6()" style="background-color: #9b59b6;"></div>
+            <div class="color" onclick="colorff9ef4()" style="background-color: #ff9ef4;"></div>
+            <div class="color" onclick="coloreb459e()" style="background-color: #eb459e;"></div>
+            <div class="color" onclick="colore91e63()" style="background-color: #e91e63;"></div>
+            <div class="color" onclick="colored4245()" style="background-color: #ed4245;"></div>
+            <div class="color" onclick="colorfaa81a()" style="background-color: #faa81a;"></div>
+            <div class="color" onclick="color57f287()" style="background-color: #57f287;"></div>
+            <div class="color" onclick="color1abc9c()" style="background-color: #1abc9c;"></div>
+            <div class="color" onclick="colord6d6d6()" style="background-color: #d6d6d6;"></div>
+        </div>
+        <i class="bx bx-x text" onclick="closeEdit()"></i>
+    </section>
+    <audio autoplay>
+        <source src="#">
+    </audio>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body>
+</html>
