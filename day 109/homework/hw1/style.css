@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: hsl(214, 17%, 92%);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container{
+    width: 1300px;
+    height: 600px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.container .cube{
+    overflow: hidden;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.cube .name{
+    font-size: 15px;
+    font-weight: 700;
+    color: hsl(0, 0%, 100%);
+    font-weight: 500;
+}
+
+.cube .below-name{
+    font-size: 12px;
+    font-weight: 500;
+    color: hsl(0, 0%, 81%);
+    font-weight: 500;
+    margin-top: 5px;
+}
+
+.cube h2{
+    font-size: 16px;
+    width: 90%;
+    text-align: center;
+    font-weight: 600;
+    color: hsl(0, 0%, 100%);
+    margin-top: 30px;
+}
+
+.cube .text{
+    font-size: 12px;
+    width: 90%;
+    text-align: center;
+    color: hsl(0, 0%, 73%);
+    font-weight: 500;
+    margin-top: 30px;
+}
+
+.container .cube:nth-child(1){
+    background-color: hsl(263, 55%, 52%);
+    grid-column: span 2;
+}
+
+.container .cube:nth-child(2){
+    background-color: hsl(217, 19%, 35%);
+}
+
+.container .cube:nth-child(3){
+    background-color: hsl(0, 0%, 100%);
+    grid-row: span 2;
+}
+
+.container .cube:nth-child(4){
+    background-color: hsl(0, 0%, 100%);
+}
+
+.container .cube:nth-child(5){
+    background-color: hsl(219, 29%, 14%);
+    grid-column: span 2;
+}
