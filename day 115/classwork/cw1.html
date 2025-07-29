@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input placeholder="search..." id="search">
+    <script defer>
+        const search = document.getElementById('search')
+        search.onchange = (e) => {
+            const value = e.target.value
+            console.log(value)
+        }
+    </script>
+</body>
+</html>

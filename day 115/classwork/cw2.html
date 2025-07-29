@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+    <input placeholder="search..." id="search">
+    <div id="nameSearch"></div>
+    <script defer>
+        const data = [
+            {
+                id: 'er23vr9823vreg32dfwe',
+                name: 'nugzari',
+                age: 52
+            },
+            {
+                id: 'r2r2v3nyrv32r92388vw',
+                name: 'lamzira',
+                age: 46
+            }
+        ]
+        const search = document.getElementById('search')
+        search.onchange = (e) => {
+            const value = e.target.value
+            console.log(value)
+        }
+        data.map((item) => {
+            const div = document.createElement('div')
+            const nameSearch = document.getElementById('nameSearch')
+            div.textContent = item.name
+            nameSearch.append(div)
+        })
+    </script>
+</body>
+</html>
