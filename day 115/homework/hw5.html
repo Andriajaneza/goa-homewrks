@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" placeholder="enter" id="search">
+    <div id="div"></div>
+    <script>
+        const input = document.getElementById('search')
+        const div = document.getElementById('div')
+
+        const data = [
+            { 
+                name: 'გატო',
+                score: '20' 
+            },
+            { 
+                name: 'ვატო',
+                score: '60' 
+            },
+            { 
+                name: 'მატო',
+                score: '120'
+            },
+            { 
+                name: 'ლატო',
+                score: '10'
+            },
+            { 
+                name: 'ნატო',
+                score: '20' 
+            }
+        ]
+
+        input.onchange = () => {
+            data.forEach((item) => {
+                if (item.score >= input.value) {
+                    div.textContent = item.name
+                }
+                else {
+                    div.textContent = ''
+                }
+            })
+        }
+    </script>
+</body>
+</html>

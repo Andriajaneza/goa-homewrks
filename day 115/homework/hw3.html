@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" placeholder="enter" id="search">
+    <script>
+        const input = document.getElementById('search')
+
+        const data = [
+            { 
+                favouriteColor: 'red' 
+            },
+            { 
+                favouriteColor: 'blue' 
+            },
+            { 
+                favouriteColor: 'green' 
+            },
+            { 
+                favouriteColor: 'yellow' 
+            },
+            { 
+                favouriteColor: 'aqua' 
+            }
+        ]
+
+        input.onchange = () => {
+            data.forEach((item) => {
+                if (item.favouriteColor === input.value) {
+                    console.log(item)
+                }
+            })
+        }
+    </script>
+</body>
+</html>
