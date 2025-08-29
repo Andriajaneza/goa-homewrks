@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1></h1>
+    <script>
+        const text = document.querySelector('h1')
+        second = 0
+        minute = 0
+        hour = 0
+        setInterval(() => {
+            second += 1
+            if (second > 59) {
+                second = 0
+                minute += 1
+            }
+            if (minute > 59) {
+                minute = 0
+                hour += 1
+            }
+            text.textContent = `${hour}:${minute}:${second}`
+        }, 1000);
+    </script>
+</body>
+</html>
