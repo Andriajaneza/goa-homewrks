@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Cat {
+            constructor(name, age) {
+                this.name = name;
+                this.age = age;
+                this.arr = []
+            }
+            array() {
+                this.arr = [1, 2, 3, 4, 5]
+            }
+            check() {
+                this.arr.forEach(item => {
+                    console.log(item)
+                });
+            }
+        }
+        const myCat = new Cat('emma', 2)
+        Cat.array()
+        Cat.check()
+    </script>
+</body>
+</html>

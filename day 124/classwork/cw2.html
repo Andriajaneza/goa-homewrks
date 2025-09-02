@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Cat {
+            constructor(name, age) {
+                this.name = name;
+                this.age = age;
+            }
+            talk() {
+                return "Meow 😺";
+            }
+            greeting() {
+                return `გამარჯობა მოგესალემებათ ${this.name}`;
+            }
+        }
+        const cat1 = new Cat("ლამზირა", 2);
+        const cat2 = new Cat("ნათელა", 3);
+        console.log(cat1.talk());
+        console.log(cat1.greeting());
+        console.log(cat2.greeting());
+    </script>
+</body>
+</html>
