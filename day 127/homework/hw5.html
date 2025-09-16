@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const arr = [50, 100, 150]
+        arr.forEach((item) => {
+            if (item < 50) {
+                console.log(item + ' is cheap')
+            }
+            if (item < 100) {
+                console.log(item + ' is normal price')
+            }
+            if (item < 150) {
+                console.log(item + ' is lil expensive')
+            }
+            if (item > 150) {
+                console.log(item + ' is too expensive')
+            }
+        })
+    </script>
+</body>
+</html>
