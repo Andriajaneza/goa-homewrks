@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // making first function
+        function step1() {
+            return "step1"
+        }
+        // making second function
+        function step2() {
+            return "step2" 
+        }
+        // making third function
+        function step3() {
+            return "step3" 
+        }
+        // creating async function with 1 sec duration
+        function asyncFunc() {
+            setTimeout(() => {
+                return 'lomi'
+            }, 1000);
+        }
+        // creating async function with 2 sec duration
+        function asyncFunc2() {
+            setTimeout(() => {
+                return 'lomi 2'
+            }, 2000);
+        }
+        console.log(asyncFunc()) // calling first async function and logs lomi after 1 sec
+        console.log(asyncFunc2()) // calling first async function and logs lomi2 after 2 sec
+        console.log(step1()) // calling step 1
+        console.log(step2()) // calling step 2
+    </script>
+</body>
+</html>
